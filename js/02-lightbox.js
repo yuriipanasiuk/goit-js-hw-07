@@ -1,12 +1,12 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 const galleryListRef = document.querySelector(".gallery");
-const createGallery = createGalleryItems(galleryItems);
+const createGallery = createGalleryList(galleryItems);
 
 galleryListRef.addEventListener("click", onClick);
 galleryListRef.insertAdjacentHTML("beforeend", createGallery);
 
-function createGalleryItems(galleryItems) {
+function createGalleryList(galleryItems) {
   return galleryItems
     .map(({ preview, original, description }) => {
       return `<li class="gallery__item">
@@ -20,17 +20,6 @@ function createGalleryItems(galleryItems) {
 
 function onClick(evt) {
   evt.preventDefault();
-
-  const currentGalleryCard = document.querySelector(".gallery__image");
-
-  if (!currentGalleryCard) {
-    return;
-  }
-  createImageModal();
-}
-
-function createImageModal() {
-  createLiteBox();
 }
 
 function createLiteBox() {
@@ -39,6 +28,6 @@ function createLiteBox() {
     captionPosition: "bottom",
     captionDelay: 250,
   });
-
   return lightbox;
 }
+createLiteBox();
