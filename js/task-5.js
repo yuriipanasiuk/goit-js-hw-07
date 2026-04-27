@@ -13,6 +13,8 @@ function getRandomHexColor() {
 }
 
 function handleChangeColor() {
-  refs.span.textContent = getRandomHexColor();
-  refs.body.style.backgroundColor = refs.span.textContent;
+  const color = getRandomHexColor();
+
+  refs.span.textContent = color;
+  refs.body.style.backgroundColor = color;
 }
