@@ -148,16 +148,14 @@ h1 {
   background-color: #6c8cff;
 }
 
-#controls  {
+#controls {
   display: flex;
   gap: 16px;
   padding: 32px;
   margin-bottom: 16px;
   justify-content: center;
-  background-color: #F6F6FE;
+  background-color: #f6f6fe;
 }
-
-
 
 #controls input {
   width: 150px;
@@ -168,7 +166,7 @@ h1 {
 }
 
 [data-create] {
-  background-color: #4E75FF;
+  background-color: #4e75ff;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -179,11 +177,11 @@ h1 {
 }
 
 [data-create]:hover {
-  background-color: #6C8CFF;
+  background-color: #6c8cff;
 }
 
 [data-destroy] {
-  background-color: #FF4E4E;
+  background-color: #ff4e4e;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -197,10 +195,10 @@ h1 {
   background-color: #ff7070;
 }
 
-#boxes  {
+#boxes {
   display: flex;
-  gap: 44px;
+  gap: 10px;
   padding: 32px;
   justify-content: center;
-  background-color: #F6F6FE;
+  background-color: #f6f6fe;
 }
