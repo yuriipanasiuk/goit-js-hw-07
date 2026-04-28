@@ -9,4 +9,4 @@ const handleInput = e => {
   refs.output.textContent = value || 'Anonymous';
 };
 
-document.addEventListener('input', handleInput);
+refs.input.addEventListener('input', handleInput);

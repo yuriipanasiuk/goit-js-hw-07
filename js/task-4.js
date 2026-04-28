@@ -22,4 +22,4 @@ const handleFormSubmit = e => {
   formRef.reset();
 };
 
-document.addEventListener('submit', handleFormSubmit);
+formRef.addEventListener('submit', handleFormSubmit);
